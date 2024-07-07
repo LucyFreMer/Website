@@ -1,0 +1,358 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src:url(fonty/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+body {
+    font: 14px "Poppins";
+    background: url(obrazky/SAM_2865c.png) #f0ca4d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0 0 0;
+    min-width: 960px;
+}
+
+body > header {
+    height: 150px;
+    width: 100%;
+    background: url(obrazky/background/nav_footer.png) #13181a;
+    display: flex;
+    justify-content:space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background: url(obrazky/png/logo1.png) no-repeat;
+    background-size: 40px 40px;
+}
+
+#logo > * {
+    margin: 0 0 0 50px;
+}
+
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #c49d31;  
+}
+
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo small {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: #eec24a73;   
+}
+
+nav ul {
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    font-size: 1.2em;
+    line-height: 4.3em;
+    padding: 0 25px;
+    margin: 0 5px;
+}
+
+nav ul a {
+    color: #eec24a;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a:hover,.aktivni a  {
+    border-bottom: 2px solid #eec24aad;
+}
+
+article {
+    max-width: 960px;
+    padding: 130px 50px 80px 50px;
+    margin: 0 auto;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: #13181a;
+    padding: 10px -20px;
+    margin: 40px 0 0 0;
+}
+
+article h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    margin: 0;
+    border-bottom: 4px solid #13181a;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article header {
+    height: 60px;
+}
+
+article section p {
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+    text-align: justify
+}
+
+article section a {
+    color: #c48f1d;
+}
+
+body > footer {
+    box-sizing: border-box;
+    height: 180px;
+    background: url(obrazky/background/nav_footer.png) #111014 top;
+    text-align: center;
+    color: #816a2acc;
+    padding: 80px 0 0 0;
+    clip-path: polygon(0 30px, 100% 0, 150% 105%, 0 105%);
+}
+
+body > footer a {
+    color: #96792b;
+    text-decoration: none;
+}
+
+html {
+    background:   #111014;
+}
+
+.avatar {
+    width: 300px;
+    filter:grayscale(50%) ;
+    float: right;
+    margin-left: 30px;
+    border-radius: 3%;
+}
+
+.vlevo {
+    float: left;
+    padding-right: 20px;
+}
+
+.centrovany {
+    text-align: center;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+}
+
+#dovednosti {
+    table-layout: fixed;
+    background-color: #13181a3d;
+    border: 3px solid #06232462;
+    padding: 5px;
+    border-radius: 3px;
+    border-spacing: 3px;
+}
+
+#dovednosti tr {
+    background-color: #13181a3d;
+}
+
+#dovednosti td {
+    min-width: 275px;
+    border: 2px solid #06232434;
+    padding: 20px;
+    vertical-align: top;
+    border-radius: 3px
+}
+
+#dovednosti h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#dovednosti td img {
+    height: 90px;
+    margin-right: 10px; 
+}
+
+#dovednosti p {
+    color: #0b0f11;
+    font-size: 1.em;
+}
+
+#fotografie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px 20px; 
+    margin: 20px -65px; 
+    padding: 0; 
+    min-width: 1100px;
+}
+
+.fotografie-title {
+    margin: 0px 0px 0px -42px;
+    display: inline-block;
+}
+
+.fotografie-section {
+    background-color: #13181a9d; 
+    text-align: center;
+    padding: 10px 100px;
+    margin: 20px -45px;
+    border-radius: 5px;
+    color: #eec24ab4;
+    margin-bottom: 25px;
+}
+
+#fotografie a {
+    text-decoration: none;
+}
+
+#fotografie img {
+    border-radius: 4px; 
+    margin-right: 10px;
+    border: 1px solid #13181a49;
+}
+
+#fotografie img:hover {
+    transform: scale(1.01);
+    filter: contrast(70%);
+}
+
+.zacisteni{
+    clear: both;
+}
+
+.kontakt-tlacitko {
+    background: #eec24a0a;
+    padding: 8px 20px;
+    border-radius: 5px;  
+}
+
+.fotografie-tlacitko {
+    text-transform: uppercase;
+    color: #eec24a;
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 12px 25px;
+    background: #062324a9;
+    border-radius: 25px;
+}
+
+.kontakt-tlacitko:hover,
+.fotografie-tlacitko:hover {
+    filter: brightness(120%) contrast(75%);
+    border: 0;
+}
+
+.dovednosti-title {
+    margin: 0 -110px;
+    display: inline-block;
+}
+
+.kontakt-title {
+    padding: px;
+    margin: 0 120px;
+    display: inline-block;
+}
+
+.kontakt-odstavec {
+    background-color: #13181aa4; 
+    padding: 15px 50px;
+    margin: 0 100px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #eec24ab4;
+    text-align: left;
+}
+
+.kontakt-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.kontakt-form {
+    display: inline-block;
+    text-align: left;
+    background-color: #2c383d3f;
+    padding: 20px 100px;
+    border: double 5px #2c383d3f;
+    border-radius:10px;
+    margin: 10px 0 5px;
+}   
+
+.omne-title {
+    margin: 0 70px;
+    display: inline-block;
+}
+.omne-odstavec {
+    background-color: #13181a9d; 
+    padding: 15px 50px;
+    margin: 0 -80px 10px 0;
+    border-radius: 5px;
+    display: inline-block;
+    color: #eec24ab4;
+}
+
+.omne {
+    text-align: center;
+    padding: 20px;
+}
+
+.uvod {
+    background-color: #13181a9d; 
+    padding: 15px 50px;
+    border-radius: 5px;
+    color: #eec24ab4;
+    max-width: 500px;
+}
+
+.co-umim-title {
+    margin: 35px 0 10px 0px;
+    display: inline-block;
+}
+
+.co-umim {
+    background-color: #13181a9d; 
+    padding: 15px 50px 5px 50px;
+    border-radius: 5px;
+    color: #eec24ab4;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
